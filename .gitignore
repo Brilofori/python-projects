@@ -7,3 +7,7 @@ venv/
 
 # VS Code
 .vscode/
+
+# Local scratch / test files
+test*.py
+*_test.py
