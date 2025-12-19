@@ -30,5 +30,4 @@ def this_function_reads_and_stores_log_data():
     flags = win32evtlog.EVENTLOG_BACKWARDS_READ | win32evtlog.EVENTLOG_SEQUENTIAL_READ
     offset = 0 
     events = win32evtlog.ReadEventLog(hand, flags, offset )
-    print(events)
 this_function_reads_and_stores_log_data()
