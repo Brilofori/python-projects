@@ -8,8 +8,6 @@ Purpose:
 
 Key Notes:
 - Requires Administrator privileges to access the Security log
-- Uses backwards sequential reading to process most recent events first
-- Designed to be extended with filtering, aggregation, and alert logic W
 
 Author: Bril Ofori
 """
