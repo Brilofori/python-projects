@@ -6,7 +6,7 @@ scope for the sake of functionality due to pythons performance hindering when sc
 import socket
 import datetime
 
-    # Targeted high-risk ports (intentionally scoped for performance and relevance)
+    # Targeted high-risk ports (intentionally scoped for performance and relevant ports
 vulnerable_ports = {
 
     # Remote Access and Authentication Services
