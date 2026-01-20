@@ -6,10 +6,9 @@ Purpose:
 - Extract and display core metadata for security-relevant events
 - Serve as a foundation for SOC-style log analysis and detection logic
 
-Key Notes:
+Key Notes!!!!:
 - Requires Administrator privileges to access the Security log
 
-Author: Bril Ofori
 """
 
 
