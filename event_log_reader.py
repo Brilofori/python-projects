@@ -77,19 +77,20 @@ def read_security_log_events():
             events = win32evtlog.ReadEventLog(hand, flags, 0)
             if not events:
                 break
-        
             for event in events:
                 display_event_metadata(event)
-
     except Exception as e:
         print(f'error occured at: {e}')
-    
-read_security_log_events()
+def main():
+    hand = read_security_log_events()
+    try:
+        read_security_log_events(hand)
+    finally:
+        if hand:
+            win32evtlog.CloseEventLog(hand)
+            print('Event log handle closed.')
 
-###README
-### Why this project exists
-###This script was built to deepen my understanding of:
-###- Windows event logging internals
-###- Security telemetry ingestion
-###- Python automation for SOC and Blue Team workflows
+
+if __name__ == '__main__':
+    main()
 
